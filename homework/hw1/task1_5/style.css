@@ -1,0 +1,21 @@
+body{
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.FU0R95JByw46yPxAC4lpsQHaFA?rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+p{
+    background-color: lightgrey;
+    width: 100%;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+.actors{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

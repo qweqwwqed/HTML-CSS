@@ -1,0 +1,35 @@
+body{
+    background-image: url("https://plus.unsplash.com/premium_photo-1675453754639-d6be5316afac?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+p {
+    color: red;
+    /*font-size: 32px;*/
+    width: 50%;
+    height: 50px;
+    background-color: lightblue;
+    display: inline-block;
+}
+
+h2, h3 {
+    color: blue
+}
+sub, sup{
+    font-size: 16px;
+    color: tan;
+}
+span{
+    /*font-size: 40px;*/
+    color: coral;
+    width: 50%;
+    height: 50px;
+    background-color:lightblue ;
+    display: inline-block;
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
