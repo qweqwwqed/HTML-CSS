@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+section{
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial sans-serif;
+    gap: 25px;
+    font-size: 20px;
+}
+section p{
+    width: 80%;
+}
+.top-section{
+    background-color: #fb4141;
+}
+.middle-section{
+    background-color: #7171ff;
+}
+.bottom-section{
+    background-color: #80ba33;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    margin: 30px;
+}
