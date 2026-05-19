@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: #000000;
+        }
+        .heart{
+            position:relative;
+            width:120px;
+            height:120px;
+        }
+        .circle{
+            position:absolute;
+            width:62px;
+            height:62px;
+            background:red;
+            border-radius:50%;
+            animation:preloader 5s ease-in-out infinite alternate;
+        }
+        .left{
+            left:-100px;
+            top:0;
+        }
+        .right{
+            right:-100px;
+            top:0;
+            animation-name: right;
+        }
+        .bottom{
+            position:absolute;
+            width:60px;
+            height:60px;
+            background:red;
+            left:30px;
+            top:30px;
+            animation:bottom 5s ease-in-out infinite alternate;
+        }
+        @keyframes preloader {
+            from{
+                transform:translateX(0);
+            }
+
+            to{
+                transform:translateX(100px);
+            }
+        }
+        @keyframes right{
+            from{
+                transform:translateX(0);
+            }
+
+            to{
+                transform:translateX(-100px);
+            }
+        }
+        @keyframes bottom{
+            from{
+                transform:rotate(-180deg);
+            }
+
+            to{
+                transform:rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="heart">
+    <div class="circle left"></div>
+    <div class="circle right"></div>
+    <div class="bottom"></div>
+</div>
+</body>
+</html>

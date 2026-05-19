@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-circle{
+            width: 200px;
+            height: 200px;
+            border-top: 30px solid crimson;
+            border-bottom: 30px solid crimson;
+            border-left: 30px solid aliceblue;
+            border-right: 30px solid aliceblue;
+            animation: preloader 3.5s ease-in-out alternate infinite;
+        }
+        @keyframes preloader{
+            from{
+                transform: rotate(360deg);
+            }
+            to{
+                transform: rotate(-360deg);
+                border-radius: 50%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="box-circle"></div>
+</body>
+</html>
