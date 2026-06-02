@@ -12,7 +12,7 @@ body{
     height: 100vh;
     flex-direction: column;
 }
-.login-box{
+form{
     width: 400px;
     background: white;
     border: 1px solid #dbdbdb;
