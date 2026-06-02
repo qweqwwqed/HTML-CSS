@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    font-family: Arial, sans-serif;
+}
+.form-registration{
+    width: 38vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 20px;
+}
+.form-registration div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 139, 139, 0.14);
+    height: 25%;
+}
+.form-registration div:nth-child(1) h3{
+    font-size:25px;
+    font-weight: 400;
+}
+.form-registration form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+input[type=text], input[type=password]{
+    width: 300px;
+    margin: 15px;
+    height: 32px;
+}
+.form-registration div:nth-child(3){
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11px;
+}
+form input[type=submit]{
+    background-color: rgb(0, 139, 139, 0.14);
+    border-radius: 15px;
+    border: 1px solid rgb(0, 139, 139, 0.14);
+    width: 80px;
+    height: 25px;
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        form sup{
+            color: green;
+        }
+        textarea{
+            resize: none;
+            width: 40px;
+
+        }
+        .form-registration{
+            border: 1px solid green;
+            width: 30%;
+            border-radius: 20px;
+            padding: 50px;
+        }
+        input[type="text"]{
+            background: lightsteelblue;
+            border: 2px solid lightsteelblue;
+            border-radius: 2px;
+            color: cadetblue;
+            font-family: sans-serif;
+        }
+        input[type="text"]::placeholder{
+            color: white;
+
+        }
+        input[type="text"]:focus{
+            outline: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+<form class="form-registration">
+    <label for="name">Ввеіть своє ім'я</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required ><sup>*</sup>
+
+    <label for="email">Ввеіть свій email</label>
+    <input type="email" name="email" id="email" placeholder="example@amil.com" required ><sup>*</sup>
+
+    <label for="password">Ввеіть свій пароль</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password" required ><sup>*</sup>
+
+    <label for="age">Ввеіть свій вік</label>
+    <input type="number" name="age" id="age" min="18" max="100" >
+
+    <label>Стать</label>
+    <label><input type="radio" name="gender" value="male">Чоловіча</label>
+    <label><input type="radio" name="gender" value="female">Жіноча</label>
+
+    <label>
+        <input type="checkbox" name="newsletter">Підписатися на новини
+    </label>
+
+    <label for="lorem">Країна</label>
+    <select id="lorem">
+        <option value="">Оберіть країну</option>
+        <option value="ua">Україна</option>
+        <option value="ca">Канада</option>
+        <option value="usa">США</option>
+        <option value="me">Мексика</option>
+    </select>
+    
+    <label for="phone">
+        <select id="phone">
+            <optgroup label="Apple">
+                <option value="15">IPhone 15</option>
+                <option value="16">IPhone 16</option>
+                <option value="17">Iphone 17</option>
+            </optgroup>
+
+            <optgroup label="Samsung">
+                <option value="24">S24</option>
+                <option value="54">A54</option>
+                <option value="21">S21</option>
+            </optgroup>
+        </select>
+    </label>
+
+    <label for="comment"></label>
+    <textarea id="comment" rows="4" cols="50">
+    </textarea>
+
+    <div>
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+    </div>
+</form>
+</body>
+</html>
