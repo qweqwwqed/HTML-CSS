@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            grid-template-rows: 0.5fr 5fr 4fr 0.9fr 1fr;
+            grid-template-areas:
+            "nav nav"
+            "main section1"
+            "main section2"
+            "section3 section3"
+            "footer footer"
+        }
+        .grid nav{
+            grid-area: nav;
+            background: #D9D9D9;
+        }
+        .grid main{
+            grid-area: main;
+            background: #A4A4A4;
+        }
+        .grid section:nth-child(3){
+            grid-area: section1;
+            background: #7F7A7A;
+        }
+        .grid section:nth-child(4){
+            grid-area: section2;
+            background: #615050;
+        }
+        .grid section:nth-child(5){
+            grid-area: section3;
+            background: #D9D9D9;
+        }
+        .grid footer{
+            grid-area: footer;
+            background: #AFA9A9;
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+    <nav></nav>
+    <main></main>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+</div>
+</body>
+</html>
